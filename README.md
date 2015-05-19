@@ -5,7 +5,7 @@ Website:[Anhui STU Online Judge](http://183.167.205.82:8081/JudgeOnline)
 
 **Screenshot**
 
-
+![](http://i4.tietuku.com/edccdbb173e6dca5.png)
 
 ***
 
