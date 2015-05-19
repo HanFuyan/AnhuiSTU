@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="../img/favicon.ico" /></link>
+		<title>User list</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+		<style>
+			#conterntdiv {
+				background-image: url(img/contentbg.png);
+				background-repeat: no-repeat;
+			}
+			#footerdiv {
+				text-align: center;
+				color: #AAA;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="container-fluid">
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：logo图片
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<img src="../img/left.png" />
+				</div>
+				<div class="col-md-4">
+					<img src="../img/right.png" />
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：导航栏
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="../index.html">Anhui STU</a>
+							</div>
+
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Problem Set <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="Problemlist.html">Problems</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="SubmitProblem.html">Submit Problem</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="StatusList.html">Status List</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Online Judge <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="BBS.html">Web Board</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="FAQ.html">F.A.Qs</a>
+											</li>
+
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Member <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="Modifyuserpage.html">Update Info</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="#">Ranklist</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contests <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Current Contest</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="#">Scheduled Contest</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="Pastcontests.html">Past Contest</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：搜索、登录、注册
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for Problems ID ...">
+								<span class="input-group-btn">
+
+        							<button class="btn btn-default" type="button">Go!</button>
+
+      							</span>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for Member ...">
+								<span class="input-group-btn">
+
+        							<button class="btn btn-default" type="button">Go!</button>
+
+      							</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1">
+						Login
+					</button>
+					<span>or</span>
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">
+						Register
+					</button>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+             	作者：hanfuyan@vip.qq.com
+             	时间：2015-05-16
+             	描述：正文内容
+             -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10" id="conterntdiv">
+					<hr />
+					<h3>User List</h3>
+					<em><a class="col-md-offset-8" href="#">Click Here To Check The Recent Ranklist</a></em>
+					<hr />
+					<table class="table table-bordered table-hover" cellspacing="0" cellpadding="0" border="1" style="border-collapse: collapse; border-color: #CCC;">
+						<thead class="btn-info" align="center">
+							<td width="10%"><b>No.</b>
+							</td>
+							<td width="10%"><b>User ID</b>
+							</td>
+							<td width="40%"><b>Nick Name</b>
+							</td>
+							<td width="15%"><a href=userlist><b><font color=white>Solved Problems</font></b></a>
+							</td>
+							<td width="10%"><a href=userlist?of1=submit&od1=desc&of2=solved&od2=asc><b><font color=white>Submit</font></b></a>
+							</td>
+							<td width="15%"><a href=userlist?of1=ratio&od1=desc&of2=solved&od2=desc><b><font color=white>Ratio (AC/submit)</font></b></a>
+							</td>
+						</thead>
+						<tr align=center>
+							<td width="5%" align="center">1</td>
+							<td><a href=userstatus?user_id=1881140227>1881140227</a>
+							</td>
+							<td><font color=green>伍伟扬</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881140227>288</a>
+							</td>
+							<td><a href=status?user_id=1881140227>501</a>
+							</td>
+							<td>57%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">2</td>
+							<td><a href=userstatus?user_id=Python>Python</a>
+							</td>
+							<td><font color=green>Python</font>
+							</td>
+							<td><a href=status?result=0&user_id=Python>286</a>
+							</td>
+							<td><a href=status?user_id=Python>562</a>
+							</td>
+							<td>50%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">3</td>
+							<td><a href=userstatus?user_id=1881130106>1881130106</a>
+							</td>
+							<td><font color=green>崔宁</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881130106>265</a>
+							</td>
+							<td><a href=status?user_id=1881130106>563</a>
+							</td>
+							<td>47%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">4</td>
+							<td><a href=userstatus?user_id=s1884120234>s1884120234</a>
+							</td>
+							<td><font color=green>Lua</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120234>260</a>
+							</td>
+							<td><a href=status?user_id=s1884120234>500</a>
+							</td>
+							<td>52%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">5</td>
+							<td><a href=userstatus?user_id=18811302>18811302</a>
+							</td>
+							<td><font color=green>金涛</font>
+							</td>
+							<td><a href=status?result=0&user_id=18811302>255</a>
+							</td>
+							<td><a href=status?user_id=18811302>484</a>
+							</td>
+							<td>52%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">6</td>
+							<td><a href=userstatus?user_id=1881130125>1881130125</a>
+							</td>
+							<td><font color=green>杨英豪</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881130125>251</a>
+							</td>
+							<td><a href=status?user_id=1881130125>597</a>
+							</td>
+							<td>42%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">7</td>
+							<td><a href=userstatus?user_id=1881140203>1881140203</a>
+							</td>
+							<td><font color=green>陈善如</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881140203>240</a>
+							</td>
+							<td><a href=status?user_id=1881140203>428</a>
+							</td>
+							<td>56%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">8</td>
+							<td><a href=userstatus?user_id=1881140112>1881140112</a>
+							</td>
+							<td><font color=green>姜衡</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881140112>240</a>
+							</td>
+							<td><a href=status?user_id=1881140112>438</a>
+							</td>
+							<td>54%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">9</td>
+							<td><a href=userstatus?user_id=1881140115>1881140115</a>
+							</td>
+							<td><font color=green>梁鸿睿</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881140115>237</a>
+							</td>
+							<td><a href=status?user_id=1881140115>468</a>
+							</td>
+							<td>50%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">10</td>
+							<td><a href=userstatus?user_id=1881130102>1881130102</a>
+							</td>
+							<td><font color=green>陈勇</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881130102>228</a>
+							</td>
+							<td><a href=status?user_id=1881130102>397</a>
+							</td>
+							<td>57%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">11</td>
+							<td><a href=userstatus?user_id=luoyan>luoyan</a>
+							</td>
+							<td><font color=green>罗雁</font>
+							</td>
+							<td><a href=status?result=0&user_id=luoyan>219</a>
+							</td>
+							<td><a href=status?user_id=luoyan>611</a>
+							</td>
+							<td>35%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">12</td>
+							<td><a href=userstatus?user_id=1881140221>1881140221</a>
+							</td>
+							<td><font color=green>王慈成</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881140221>216</a>
+							</td>
+							<td><a href=status?user_id=1881140221>361</a>
+							</td>
+							<td>59%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">13</td>
+							<td><a href=userstatus?user_id=1881120009>1881120009</a>
+							</td>
+							<td><font color=green>李海结</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881120009>216</a>
+							</td>
+							<td><a href=status?user_id=1881120009>397</a>
+							</td>
+							<td>54%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">14</td>
+							<td><a href=userstatus?user_id=1881130126>1881130126</a>
+							</td>
+							<td><font color=green>杨钊</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881130126>212</a>
+							</td>
+							<td><a href=status?user_id=1881130126>425</a>
+							</td>
+							<td>49%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">15</td>
+							<td><a href=userstatus?user_id=1881130101>1881130101</a>
+							</td>
+							<td><font color=green>安涛</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881130101>191</a>
+							</td>
+							<td><a href=status?user_id=1881130101>346</a>
+							</td>
+							<td>55%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">16</td>
+							<td><a href=userstatus?user_id=1881140224>1881140224</a>
+							</td>
+							<td><font color=green>王振远</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881140224>181</a>
+							</td>
+							<td><a href=status?user_id=1881140224>308</a>
+							</td>
+							<td>58%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">17</td>
+							<td><a href=userstatus?user_id=1881100224>1881100224</a>
+							</td>
+							<td><font color=green>Leo Rain</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881100224>169</a>
+							</td>
+							<td><a href=status?user_id=1881100224>301</a>
+							</td>
+							<td>56%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">18</td>
+							<td><a href=userstatus?user_id=s1884120117>s1884120117</a>
+							</td>
+							<td><font color=green>cainiao</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120117>169</a>
+							</td>
+							<td><a href=status?user_id=s1884120117>401</a>
+							</td>
+							<td>42%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">19</td>
+							<td><a href=userstatus?user_id=1884140210>1884140210</a>
+							</td>
+							<td><font color=green>范晋豪</font>
+							</td>
+							<td><a href=status?result=0&user_id=1884140210>165</a>
+							</td>
+							<td><a href=status?user_id=1884140210>302</a>
+							</td>
+							<td>54%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">20</td>
+							<td><a href=userstatus?user_id=s1881140117>s1881140117</a>
+							</td>
+							<td><font color=green>聂神宽</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1881140117>153</a>
+							</td>
+							<td><a href=status?user_id=s1881140117>253</a>
+							</td>
+							<td>60%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">21</td>
+							<td><a href=userstatus?user_id=1887130219>1887130219</a>
+							</td>
+							<td><font color=green>吴天洛</font>
+							</td>
+							<td><a href=status?result=0&user_id=1887130219>147</a>
+							</td>
+							<td><a href=status?user_id=1887130219>334</a>
+							</td>
+							<td>44%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">22</td>
+							<td><a href=userstatus?user_id=1881130110>1881130110</a>
+							</td>
+							<td><font color=green>hanxiaox</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881130110>147</a>
+							</td>
+							<td><a href=status?user_id=1881130110>342</a>
+							</td>
+							<td>42%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">23</td>
+							<td><a href=userstatus?user_id=1881140237>1881140237</a>
+							</td>
+							<td><font color=green>郑雨杭</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881140237>144</a>
+							</td>
+							<td><a href=status?user_id=1881140237>276</a>
+							</td>
+							<td>52%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">24</td>
+							<td><a href=userstatus?user_id=s1881140113>s1881140113</a>
+							</td>
+							<td><font color=green>接龙闪</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1881140113>142</a>
+							</td>
+							<td><a href=status?user_id=s1881140113>343</a>
+							</td>
+							<td>41%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">25</td>
+							<td><a href=userstatus?user_id=qinchaolin>qinchaolin</a>
+							</td>
+							<td><font color=green>QCL-boy</font>
+							</td>
+							<td><a href=status?result=0&user_id=qinchaolin>140</a>
+							</td>
+							<td><a href=status?user_id=qinchaolin>410</a>
+							</td>
+							<td>34%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">26</td>
+							<td><a href=userstatus?user_id=s1884120121>s1884120121</a>
+							</td>
+							<td><font color=green>汪健强</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120121>136</a>
+							</td>
+							<td><a href=status?user_id=s1884120121>205</a>
+							</td>
+							<td>66%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">27</td>
+							<td><a href=userstatus?user_id=s1884120105>s1884120105</a>
+							</td>
+							<td><font color=green>葛凤伟</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120105>136</a>
+							</td>
+							<td><a href=status?user_id=s1884120105>261</a>
+							</td>
+							<td>52%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">28</td>
+							<td><a href=userstatus?user_id=s1884120120>s1884120120</a>
+							</td>
+							<td><font color=green>唐波</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120120>127</a>
+							</td>
+							<td><a href=status?user_id=s1884120120>179</a>
+							</td>
+							<td>70%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">29</td>
+							<td><a href=userstatus?user_id=s1884120113>s1884120113</a>
+							</td>
+							<td><font color=green>李鹏飞</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120113>122</a>
+							</td>
+							<td><a href=status?user_id=s1884120113>169</a>
+							</td>
+							<td>72%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">30</td>
+							<td><a href=userstatus?user_id=S1884120229>S1884120229</a>
+							</td>
+							<td><font color=green>徐阳</font>
+							</td>
+							<td><a href=status?result=0&user_id=S1884120229>122</a>
+							</td>
+							<td><a href=status?user_id=S1884120229>262</a>
+							</td>
+							<td>46%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">31</td>
+							<td><a href=userstatus?user_id=s1884120211>s1884120211</a>
+							</td>
+							<td><font color=green>戈雯雯</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120211>120</a>
+							</td>
+							<td><a href=status?user_id=s1884120211>203</a>
+							</td>
+							<td>59%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">32</td>
+							<td><a href=userstatus?user_id=1881130116>1881130116</a>
+							</td>
+							<td><font color=green>宁文英</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881130116>120</a>
+							</td>
+							<td><a href=status?user_id=1881130116>288</a>
+							</td>
+							<td>41%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">33</td>
+							<td><a href=userstatus?user_id=1881130211>1881130211</a>
+							</td>
+							<td><font color=green>Jin Tao</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881130211>119</a>
+							</td>
+							<td><a href=status?user_id=1881130211>256</a>
+							</td>
+							<td>46%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">34</td>
+							<td><a href=userstatus?user_id=1881130107>1881130107</a>
+							</td>
+							<td><font color=green>戴龙其</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881130107>118</a>
+							</td>
+							<td><a href=status?user_id=1881130107>224</a>
+							</td>
+							<td>52%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">35</td>
+							<td><a href=userstatus?user_id=1884120101>1884120101</a>
+							</td>
+							<td><font color=green>陈浩然</font>
+							</td>
+							<td><a href=status?result=0&user_id=1884120101>117</a>
+							</td>
+							<td><a href=status?user_id=1884120101>181</a>
+							</td>
+							<td>64%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">36</td>
+							<td><a href=userstatus?user_id=1881130218>1881130218</a>
+							</td>
+							<td><font color=green>汪叶新</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881130218>117</a>
+							</td>
+							<td><a href=status?user_id=1881130218>264</a>
+							</td>
+							<td>44%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">37</td>
+							<td><a href=userstatus?user_id=1881130130>1881130130</a>
+							</td>
+							<td><font color=green>斜阳刺水</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881130130>117</a>
+							</td>
+							<td><a href=status?user_id=1881130130>281</a>
+							</td>
+							<td>41%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">38</td>
+							<td><a href=userstatus?user_id=1881140109>1881140109</a>
+							</td>
+							<td><font color=green>韩倩倩</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881140109>117</a>
+							</td>
+							<td><a href=status?user_id=1881140109>340</a>
+							</td>
+							<td>34%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">39</td>
+							<td><a href=userstatus?user_id=1881140225>1881140225</a>
+							</td>
+							<td><font color=green>魏松</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881140225>114</a>
+							</td>
+							<td><a href=status?user_id=1881140225>252</a>
+							</td>
+							<td>45%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">40</td>
+							<td><a href=userstatus?user_id=s1884120130>s1884120130</a>
+							</td>
+							<td><font color=green>Area.z</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120130>112</a>
+							</td>
+							<td><a href=status?user_id=s1884120130>198</a>
+							</td>
+							<td>56%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">41</td>
+							<td><a href=userstatus?user_id=s1884120209>s1884120209</a>
+							</td>
+							<td><font color=green>高少华</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120209>111</a>
+							</td>
+							<td><a href=status?user_id=s1884120209>180</a>
+							</td>
+							<td>61%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">42</td>
+							<td><a href=userstatus?user_id=s1884120104>s1884120104</a>
+							</td>
+							<td><font color=green>冯士贺</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120104>111</a>
+							</td>
+							<td><a href=status?user_id=s1884120104>185</a>
+							</td>
+							<td>60%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">43</td>
+							<td><a href=userstatus?user_id=1881140207>1881140207</a>
+							</td>
+							<td><font color=green>段亚飞</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881140207>111</a>
+							</td>
+							<td><a href=status?user_id=1881140207>210</a>
+							</td>
+							<td>52%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">44</td>
+							<td><a href=userstatus?user_id=1111111111>1111111111</a>
+							</td>
+							<td><font color=green>纯属打酱油</font>
+							</td>
+							<td><a href=status?result=0&user_id=1111111111>110</a>
+							</td>
+							<td><a href=status?user_id=1111111111>177</a>
+							</td>
+							<td>62%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">45</td>
+							<td><a href=userstatus?user_id=1881140230>1881140230</a>
+							</td>
+							<td><font color=green>徐茂军</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881140230>110</a>
+							</td>
+							<td><a href=status?user_id=1881140230>226</a>
+							</td>
+							<td>48%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">46</td>
+							<td><a href=userstatus?user_id=s1884120103>s1884120103</a>
+							</td>
+							<td><font color=green>董倩倩</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120103>110</a>
+							</td>
+							<td><a href=status?user_id=s1884120103>235</a>
+							</td>
+							<td>46%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">47</td>
+							<td><a href=userstatus?user_id=1881130204>1881130204</a>
+							</td>
+							<td><font color=green>杜成</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881130204>110</a>
+							</td>
+							<td><a href=status?user_id=1881130204>257</a>
+							</td>
+							<td>42%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">48</td>
+							<td><a href=userstatus?user_id=s1884120122>s1884120122</a>
+							</td>
+							<td><font color=green>王琛</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120122>109</a>
+							</td>
+							<td><a href=status?user_id=s1884120122>199</a>
+							</td>
+							<td>54%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">49</td>
+							<td><a href=userstatus?user_id=s1884120112>s1884120112</a>
+							</td>
+							<td><font color=green>黄志仁</font>
+							</td>
+							<td><a href=status?result=0&user_id=s1884120112>107</a>
+							</td>
+							<td><a href=status?user_id=s1884120112>159</a>
+							</td>
+							<td>67%</td>
+						</tr>
+						<tr align=center>
+							<td width="5%" align="center">50</td>
+							<td><a href=userstatus?user_id=1881140130>1881140130</a>
+							</td>
+							<td><font color=green>谢实俊</font>
+							</td>
+							<td><a href=status?result=0&user_id=1881140130>107</a>
+							</td>
+							<td><a href=status?user_id=1881140130>271</a>
+							</td>
+							<td>39%</td>
+						</tr>
+					</table>
+					<nav class="col-md-offset-5">
+						<ul class="pagination">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li class="active"><a href="#">1</a>
+							</li>
+							<li><a href="#">2</a>
+							</li>
+							<li><a href="#">3</a>
+							</li>
+							<li><a href="#">4</a>
+							</li>
+							<li><a href="#">5</a>
+							</li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+		<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：底部版权信息
+            -->
+		<div class="container-fluid">
+			<div id="footerdiv" class="col-md-12">
+				<hr />
+				<p>&copy;&nbsp;Anhui Science and Technology University&nbsp;<a style="color: #555;" href="#">Feedback</a>
+				</p>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../js/bootstrap.min.js"></script>
+	</body>
+
+</html>

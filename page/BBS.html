@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="../img/favicon.ico" /></link>
+		<title>Massage</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+		<style>
+			#footerdiv {
+				text-align: center;
+				color: #AAA;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="container-fluid">
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：logo图片
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<img src="../img/left.png" />
+				</div>
+				<div class="col-md-4">
+					<img src="../img/right.png" />
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：导航栏
+            -->
+			<a name=top></a>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="../index.html">Anhui STU</a>
+							</div>
+
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Problem Set <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="Problemlist.html">Problems</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="SubmitProblem.html">Submit Problem</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="StatusList.html">Status List</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Online Judge <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Web Board</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="FAQ.html">F.A.Qs</a>
+											</li>
+
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Member <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="Modifyuserpage.html">Update Info</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="Userlist.html">Ranklist</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contests <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Current Contest</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="#">Scheduled Contest</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="Pastcontests.html">Past Contest</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：搜索、登录、注册
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for Problems ID ...">
+								<span class="input-group-btn">
+
+        							<button class="btn btn-default" type="button">Go!</button>
+
+      							</span>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for Member ...">
+								<span class="input-group-btn">
+
+        							<button class="btn btn-default" type="button">Go!</button>
+
+      							</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1">
+						Login
+					</button>
+					<span>or</span>
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">
+						Register
+					</button>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+             	作者：hanfuyan@vip.qq.com
+             	时间：2015-05-16
+             	描述：正文内容
+             -->
+			<div class="container-fluid">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<hr />
+					<!--<a name=top></a>-->
+					<table border=0 width=980 background=../img/contentbg.png>
+						<tr>
+							<td>
+								<ul>
+									<li><a href=showmessage?message_id=1098><font color=blue>怎么做不来 </font></a> <b><a href=userstatus?user_id=1881140106><font color=black>1881140106</font></a></b> 2015-05-12 21:04:57.0 <b><a href=showproblem?problem_id=1079><font color=black>Problem 1079</font></a></b>
+										<hr />
+										<li><a href=showmessage?message_id=1097><font color=blue>此题有问题</font></a> <b><a href=userstatus?user_id=1884140210><font color=black>1884140210</font></a></b> 2015-05-10 12:10:13.0 <b><a href=showproblem?problem_id=1283><font color=black>Problem 1283</font></a></b>
+											<hr />
+											<li><a href=showmessage?message_id=1052><font color=blue>参考解答</font></a> <b><a href=userstatus?user_id=zhaojing><font color=black>zhaojing</font></a></b> 2014-11-07 14:04:17.0 <b><a href=showproblem?problem_id=1068><font color=black>Problem 1068</font></a></b>
+												<ul>
+													<li><a href=showmessage?message_id=1064><font color=blue>Re:参考解答</font></a> <b><a href=userstatus?user_id=1881140214><font color=black>1881140214</font></a></b> 2014-12-11 19:58:31.0
+														<li><a href=showmessage?message_id=1096><font color=blue>Re:参考解答</font></a> <b><a href=userstatus?user_id=1894140202><font color=black>1894140202</font></a></b> 2015-04-25 19:24:13.0</ul>
+												<hr />
+												<li><a href=showmessage?message_id=1094><font color=blue>本题是求a^p对m的模</font></a> <b><a href=userstatus?user_id=Python><font color=black>Python</font></a></b> 2015-04-18 08:11:07.0 <b><a href=showproblem?problem_id=1297><font color=black>Problem 1297</font></a></b>
+													<ul>
+														<li><a href=showmessage?message_id=1095><font color=blue>Re:本题是求a^p对m的模</font></a> <b><a href=userstatus?user_id=1881140202><font color=black>1881140202</font></a></b> 2015-04-21 21:00:26.0</ul>
+													<hr />
+													<li><a href=showmessage?message_id=1093><font color=blue>文件结束程序</font></a> <b><a href=userstatus?user_id=1881120009><font color=black>1881120009</font></a></b> 2015-04-11 20:06:42.0 <b><a href=showproblem?problem_id=1210><font color=black>Problem 1210</font></a></b>
+														<hr />
+														<li><a href=showmessage?message_id=1092><font color=blue>又是一题坑题</font></a> <b><a href=userstatus?user_id=1881120009><font color=black>1881120009</font></a></b> 2015-04-11 14:22:29.0 <b><a href=showproblem?problem_id=1035><font color=black>Problem 1035</font></a></b>
+															<hr />
+															<li><a href=showmessage?message_id=1091><font color=blue>直接把大于平均数的和求出来就行了</font></a> <b><a href=userstatus?user_id=panzhizhou><font color=black>panzhizhou</font></a></b> 2015-04-11 00:04:42.0 <b><a href=showproblem?problem_id=1279><font color=black>Problem 1279</font></a></b>
+																<hr />
+																<li><a href=showmessage?message_id=1084><font color=blue>2 1 2是等差数列么。。。</font></a> <b><a href=userstatus?user_id=1332120224><font color=black>1332120224</font></a></b> 2015-03-24 20:44:10.0 <b><a href=showproblem?problem_id=1004><font color=black>Problem 1004</font></a></b>
+																	<ul>
+																		<li><a href=showmessage?message_id=1090><font color=blue>Re:2 1 2是等差数列么。。。</font></a> <b><a href=userstatus?user_id=1881130102><font color=black>1881130102</font></a></b> 2015-04-10 21:18:50.0</ul>
+																	<hr />
+																	<li><a href=showmessage?message_id=1089><font color=blue>这一题输出要排序吗</font></a> <b><a href=userstatus?user_id=1881120009><font color=black>1881120009</font></a></b> 2015-04-10 17:13:29.0 <b><a href=showproblem?problem_id=1048><font color=black>Problem 1048</font></a></b>
+																		<hr />
+																		<li><a href=showmessage?message_id=1088><font color=blue>太坑人了</font></a> <b><a href=userstatus?user_id=1881120009><font color=black>1881120009</font></a></b> 2015-04-10 15:37:06.0 <b><a href=showproblem?problem_id=1205><font color=black>Problem 1205</font></a></b>
+																			<hr />
+																			<li><a href=showmessage?message_id=1000><font color=blue>1010青蛙约会</font></a> <b><a href=userstatus?user_id=java><font color=black>java</font></a></b> 2012-12-25 00:02:04.0 <b><a href=showproblem?problem_id=1010><font color=black>Problem 1010</font></a></b>
+																				<ul>
+																					<li><a href=showmessage?message_id=1063><font color=blue>Re:1010青蛙约会</font></a> <b><a href=userstatus?user_id=s1881140212><font color=black>s1881140212</font></a></b> 2014-12-05 11:07:49.0
+																						<li><a href=showmessage?message_id=1087><font color=blue>Re:1010青蛙约会</font></a> <b><a href=userstatus?user_id=1881140126><font color=black>1881140126</font></a></b> 2015-03-31 20:27:46.0</ul>
+																				<hr />
+																				<li><a href=showmessage?message_id=1086><font color=blue>如果我没记错，6位有效数字是指总共有6个数字吧。。</font></a> <b><a href=userstatus?user_id=1332120224><font color=black>1332120224</font></a></b> 2015-03-26 19:17:49.0 <b><a href=showproblem?problem_id=1119><font color=black>Problem 1119</font></a></b>
+																					<hr />
+																					<li><a href=showmessage?message_id=1085><font color=blue>PHP写法</font></a> <b><a href=userstatus?user_id=1332120224><font color=black>1332120224</font></a></b> 2015-03-24 22:29:10.0 <b><a href=showproblem?problem_id=1000><font color=black>Problem 1000</font></a></b>
+																						<hr />
+																						<li><a href=showmessage?message_id=1083><font color=blue>N的范围不超过1000</font></a> <b><a href=userstatus?user_id=test123><font color=black>test123</font></a></b> 2015-03-24 19:51:48.0 <b><a href=showproblem?problem_id=1284><font color=black>Problem 1284</font></a></b>
+																							<hr />
+																							<li><a href=showmessage?message_id=1082><font color=blue>明明说是整除</font></a> <b><a href=userstatus?user_id=1332120224><font color=black>1332120224</font></a></b> 2015-03-21 14:23:34.0 <b><a href=showproblem?problem_id=1005><font color=black>Problem 1005</font></a></b>
+																								<hr />
+																								<li><a href=showmessage?message_id=1065><font color=blue>输入数据的可能有多组</font></a> <b><a href=userstatus?user_id=root><font color=black>root</font></a></b> 2014-12-12 11:36:33.0 <b><a href=showproblem?problem_id=1200><font color=black>Problem 1200</font></a></b>
+																									<ul>
+																										<li><a href=showmessage?message_id=1070><font color=blue>Re:输入数据的可能有多组</font></a> <b><a href=userstatus?user_id=s1881140103><font color=black>s1881140103</font></a></b> 2015-01-06 20:31:12.0
+																											<li><a href=showmessage?message_id=1081><font color=blue>Re:输入数据的可能有多组</font></a> <b><a href=userstatus?user_id=1332120224><font color=black>1332120224</font></a></b> 2015-03-21 13:48:41.0</ul>
+																									<hr />
+																									<li><a href=showmessage?message_id=1080><font color=blue>这测评系统怎么搞的。。。</font></a> <b><a href=userstatus?user_id=1332120224><font color=black>1332120224</font></a></b> 2015-03-21 12:32:39.0 <b><a href=showproblem?problem_id=1141><font color=black>Problem 1141</font></a></b>
+																										<hr />
+																										<li><a href=showmessage?message_id=1079><font color=blue>终于知道怎么应付这东西了。。</font></a> <b><a href=userstatus?user_id=zhang0ZGC><font color=black>zhang0ZGC</font></a></b> 2015-03-20 21:11:17.0 <b><a href=showproblem?problem_id=1003><font color=black>Problem 1003</font></a></b>
+																											<hr />
+																											<li><a href=showmessage?message_id=1078><font color=blue>怎么搞得怎么都不对呢 </font></a> <b><a href=userstatus?user_id=1665130111><font color=black>1665130111</font></a></b> 2015-03-20 13:46:40.0 <b><a href=showproblem?problem_id=1003><font color=black>Problem 1003</font></a></b>
+																												<hr />
+																												<li><a href=showmessage?message_id=1077><font color=blue>阶乘python版</font></a> <b><a href=userstatus?user_id=zhang0ZGC><font color=black>zhang0ZGC</font></a></b> 2015-03-20 00:21:00.0 <b><a href=showproblem?problem_id=1003><font color=black>Problem 1003</font></a></b>
+																													<hr />
+																													<li><a href=showmessage?message_id=1076><font color=blue>标准输入这东西py果然好难搞。。</font></a> <b><a href=userstatus?user_id=zhang0ZGC><font color=black>zhang0ZGC</font></a></b> 2015-03-19 19:40:02.0 <b><a href=showproblem?problem_id=1138><font color=black>Problem 1138</font></a></b>
+																														<hr />
+																														<li><a href=showmessage?message_id=1075><font color=blue>如果真是这样。。</font></a> <b><a href=userstatus?user_id=zhang0ZGC><font color=black>zhang0ZGC</font></a></b> 2015-03-14 19:33:17.0 <b><a href=showproblem?problem_id=1148><font color=black>Problem 1148</font></a></b>
+																															<hr />
+																															<li><a href=showmessage?message_id=1074><font color=blue>为什么我用python跑出来，小光棍数都是且只有后三位是471的数</font></a> <b><a href=userstatus?user_id=zhang0ZGC><font color=black>zhang0ZGC</font></a></b> 2015-03-13 21:51:29.0 <b><a href=showproblem?problem_id=1148><font color=black>Problem 1148</font></a></b>
+																																<hr />
+																																<li><a href=showmessage?message_id=1060><font color=blue>电话号码可以用字符数组，也可以用64 位整数</font></a> <b><a href=userstatus?user_id=zhaojing><font color=black>zhaojing</font></a></b> 2014-11-18 22:55:08.0 <b><a href=showproblem?problem_id=1002><font color=black>Problem 1002</font></a></b>
+																																	<ul>
+																																		<li><a href=showmessage?message_id=1061><font color=blue>Re:电话号码可以用字符数组，也可以用64 位整数</font></a> <b><a href=userstatus?user_id=1881140212><font color=black>1881140212</font></a></b> 2014-11-25 14:48:48.0
+																																			<li><a href=showmessage?message_id=1068><font color=blue>Re:电话号码可以用字符数组，也可以用64 位整数</font></a> <b><a href=userstatus?user_id=1881140212><font color=black>1881140212</font></a></b> 2014-12-16 13:15:47.0
+																																				<li><a href=showmessage?message_id=1073><font color=blue>Re:电话号码可以用字符数组，也可以用64 位整数</font></a> <b><a href=userstatus?user_id=1881140212><font color=black>1881140212</font></a></b> 2015-01-14 19:27:08.0</ul>
+																																	<hr />
+																																	<li><a href=showmessage?message_id=1072><font color=blue>用gets()函数读取字符串，否则PE</font></a> <b><a href=userstatus?user_id=1881100224><font color=black>1881100224</font></a></b> 2015-01-12 11:05:38.0 <b><a href=showproblem?problem_id=1205><font color=black>Problem 1205</font></a></b>
+																																		<hr />
+																																		<li><a href=showmessage?message_id=1071><font color=blue>Presentation Error</font></a> <b><a href=userstatus?user_id=1881100224><font color=black>1881100224</font></a></b> 2015-01-10 10:10:24.0 <b><a href=showproblem?problem_id=1035><font color=black>Problem 1035</font></a></b>
+																																			<hr />
+																																			<li><a href=showmessage?message_id=1069><font color=blue>700位  应该用字符串</font></a> <b><a href=userstatus?user_id=zhaojing><font color=black>zhaojing</font></a></b> 2014-12-19 18:21:10.0 <b><a href=showproblem?problem_id=1203><font color=black>Problem 1203</font></a></b>
+																																				<hr />
+																																				<li><a href=showmessage?message_id=1066><font color=blue>最后的胜利者即&#34;约瑟夫环问题&#34;</font></a> <b><a href=userstatus?user_id=18811302><font color=black>18811302</font></a></b> 2014-12-15 02:43:18.0 <b><a href=showproblem?problem_id=1021><font color=black>Problem 1021</font></a></b>
+																																					<ul>
+																																						<li><a href=showmessage?message_id=1067><font color=blue>Re:最后的胜利者即&#34;约瑟夫环问题&#34;</font></a> <b><a href=userstatus?user_id=18811302><font color=black>18811302</font></a></b> 2014-12-15 20:39:54.0</ul>
+																																					<hr />
+																																					<li><a href=showmessage?message_id=1054><font color=blue>参考解答</font></a> <b><a href=userstatus?user_id=zhaojing><font color=black>zhaojing</font></a></b> 2014-11-07 14:05:17.0 <b><a href=showproblem?problem_id=1070><font color=black>Problem 1070</font></a></b>
+																																						<ul>
+																																							<li><a href=showmessage?message_id=1062><font color=blue>Re:参考解答</font></a> <b><a href=userstatus?user_id=s1881140131><font color=black>s1881140131</font></a></b> 2014-11-25 21:29:40.0</ul>
+																																						<hr />
+																																						<li><a href=showmessage?message_id=1049><font color=blue>参考解答</font></a> <b><a href=userstatus?user_id=zhaojing><font color=black>zhaojing</font></a></b> 2014-11-07 14:03:00.0 <b><a href=showproblem?problem_id=1065><font color=black>Problem 1065</font></a></b>
+																																							<ul>
+																																								<li><a href=showmessage?message_id=1059><font color=blue>Re:参考解答</font></a> <b><a href=userstatus?user_id=1881140127><font color=black>1881140127</font></a></b> 2014-11-18 21:17:49.0</ul>
+																																							<hr />
+																																							<li><a href=showmessage?message_id=1041><font color=blue>二分</font></a> <b><a href=userstatus?user_id=yunTianMing><font color=black>yunTianMing</font></a></b> 2014-06-15 22:40:36.0 <b><a href=showproblem?problem_id=1017><font color=black>Problem 1017</font></a></b>
+																																								<ul>
+																																									<li><a href=showmessage?message_id=1058><font color=blue>Re:二分</font></a> <b><a href=userstatus?user_id=1881140223><font color=black>1881140223</font></a></b> 2014-11-18 16:30:29.0</ul>
+																																								<hr />
+																																								<li><a href=showmessage?message_id=1050><font color=blue>参考解答</font></a> <b><a href=userstatus?user_id=zhaojing><font color=black>zhaojing</font></a></b> 2014-11-07 14:03:27.0 <b><a href=showproblem?problem_id=1066><font color=black>Problem 1066</font></a></b>
+																																									<ul>
+																																										<li><a href=showmessage?message_id=1057><font color=blue>Re:参考解答</font></a> <b><a href=userstatus?user_id=1881140135><font color=black>1881140135</font></a></b> 2014-11-14 09:26:07.0</ul>
+																																									<hr />
+																																									<li><a href=showmessage?message_id=1048><font color=blue>参考解答</font></a> <b><a href=userstatus?user_id=zhaojing><font color=black>zhaojing</font></a></b> 2014-11-07 14:02:17.0 <b><a href=showproblem?problem_id=1064><font color=black>Problem 1064</font></a></b>
+																																										<ul>
+																																											<li><a href=showmessage?message_id=1056><font color=blue>Re:参考解答</font></a> <b><a href=userstatus?user_id=s1881140107><font color=black>s1881140107</font></a></b> 2014-11-11 20:44:45.0</ul>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					<nav class="col-md-offset-5">
+						<ul class="pagination">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li class="active"><a href="#">1</a>
+							</li>
+							<li><a href="#">2</a>
+							</li>
+							<li><a href="#">3</a>
+							</li>
+							<li><a href="#">4</a>
+							</li>
+							<li><a href="#">5</a>
+							</li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+						</nav <hr />
+						<form method=post action=postpage>
+							<input type=hidden name=problem_id value=0>
+							<input type=submit value='Post new message' name=B1>
+						</form>
+						<hr />
+						<p>
+							<span class="glyphicon glyphicon-upload"></span>&nbsp;<a href=#top>To top</a>
+						</p>
+						<br>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+
+		<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：底部版权信息
+            -->
+		<div class="container-fluid">
+			<div id="footerdiv" class="col-md-12">
+				<hr />
+				<p>&copy;&nbsp;Anhui Science and Technology University&nbsp;<a style="color: #555;" href="#">Feedback</a>
+				</p>
+			</div>
+		</div>
+
+		<!--
+        	作者：hanfuyan@vip.qq.com
+        	时间：2015-05-16
+        	描述：登录 Modal
+        -->
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">Welcome AnhuiSTU OnlineJudge</h4>
+					</div>
+					<div class="modal-body">
+						<ul class="nav nav-tabs">
+							<li role="presentation" class="active"><a href="#">Login</a>
+							</li>
+						</ul>
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Member ID</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter ID">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：hanfuyan@vip.qq.com
+        	时间：2015-05-16
+        	描述：注册 Modal
+        -->
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">Welcome AnhuiSTU OnlineJudge</h4>
+					</div>
+					<div class="modal-body">
+						<ul class="nav nav-tabs">
+							<li role="presentation" class="active"><a href="#">Regiser</a>
+							</li>
+						</ul>
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Member ID</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter ID">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Nick Name</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nick Name">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Repeat Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repeat Password">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">School</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="School">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">E-mail</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../js/bootstrap.min.js"></script>
+	</body>
+
+</html>

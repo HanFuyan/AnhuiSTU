@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="../img/favicon.ico" /></link>
+		<title>Modify Register Information</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+		<style>
+			#conterntdiv {
+				background-image: url(img/contentbg.png);
+				background-repeat: no-repeat;
+			}
+			#footerdiv {
+				text-align: center;
+				position: absolute;
+				bottom: -30px;
+				color: #AAA;
+			}
+			#tab td {
+				height: 36px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="container-fluid">
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：logo图片
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<img src="../img/left.png" />
+				</div>
+				<div class="col-md-4">
+					<img src="../img/right.png" />
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：导航栏
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="../index.html">Anhui STU</a>
+							</div>
+
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Problem Set <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="Problemlist.html">Problems</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="SubmitProblem.html">Submit Problem</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="StatusList.html">Status List</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Online Judge <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="BBS.html">Web Board</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="FAQ.html">F.A.Qs</a>
+											</li>
+
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Member <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Update Info</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="Userlist.html">Ranklist</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contests <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Current Contest</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="#">Scheduled Contest</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="Pastcontests.html">Past Contest</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：搜索、登录、注册
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for Problems ID ...">
+								<span class="input-group-btn">
+        							<button class="btn btn-default" type="button">Go!</button>
+      							</span>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for Member ...">
+								<span class="input-group-btn">
+        							<button class="btn btn-default" type="button">Go!</button>
+      							</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<td>Welcome
+						<b>1887120111</b>
+						<br />
+						<a href=mail target=_parent><font color=blue>Mail:0(<b>0</b>)</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="login?action=logout&url=/JudgeOnline/submitpage?problem_id=0">Log Out</a>
+					</td>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+             	作者：hanfuyan@vip.qq.com
+             	时间：2015-05-16
+             	描述：正文内容
+             -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10" id="conterntdiv">
+					<hr />
+					<form method=POST action=modifyuser>
+						<table id="tab" align="center" cellspacing="3" cellpadding="3" width="600" border="0" background="../img/contentbg.png">
+							<tr>
+								<td colspan="2" width="600" height="50">
+									<h3 align="center">Modify Register Information</h3>
+								</td>
+							</tr>
+							<tr>
+								<td width=25%>User ID:</td>
+								<td width=75%>
+									<input type="text" name="user_id" size="20" value="1887120111" />
+								</td>
+							</tr>
+							<tr>
+								<td>Nick Name:</td>
+								<td>
+									<input type="text" name="nick" size="50" value="小韩" />
+								</td>
+							</tr>
+							<tr>
+								<td>Old Password:</td>
+								<td>
+									<input type="password" name="oldPassword" size="20" />
+								</td>
+							</tr>
+							<tr>
+								<td>New Password:</td>
+								<td>
+									<input type="password" name="newPassword" size="20" />
+								</td>
+							</tr>
+							<tr>
+								<td>Repeat Password:</td>
+								<td>
+									<input type="password" name="rptPassword" size="20" />
+								</td>
+							</tr>
+							<tr>
+								<td>School:</td>
+								<td>
+									<input type="text" name="school" size="30" value="安科" />
+								</td>
+							</tr>
+							<tr>
+								<td>Email:</td>
+								<td>
+									<input type="text" name="email" size="30" value="hanfuyan@vip.qq.com">
+								</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td align=left>
+									<input class="btn btn-success" type="submit" value="Submit" name="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<input class="btn btn-warning" type="reset" value="Reset" name="reset">
+								</td>
+							</tr>
+						</table>
+					</form>
+					<br />
+					<b style="color: orangered;">Please leave the new password blank if you don't want to change password.</b>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+		<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：底部版权信息
+            -->
+		<div class="row">
+			<div id="footerdiv" class="col-md-12">
+				<hr />
+				<p>&copy;&nbsp;Anhui Science and Technology University&nbsp;<a style="color: #555;" href="#">Feedback</a>
+				</p>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../js/bootstrap.min.js"></script>
+	</body>
+
+</html>

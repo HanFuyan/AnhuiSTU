@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="../img/favicon.ico" /></link>
+		<title>Contests</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+		<style>
+			#conterntdiv {
+				background-image: url(img/contentbg.png);
+				background-repeat: no-repeat;
+			}
+			#footerdiv {
+				text-align: center;
+				color: #AAA;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="container-fluid">
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：logo图片
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<img src="../img/left.png" />
+				</div>
+				<div class="col-md-4">
+					<img src="../img/right.png" />
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：导航栏
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="../index.html">Anhui STU</a>
+							</div>
+
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Problem Set <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="Problemlist.html">Problems</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="SubmitProblem.html">Submit Problem</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="StatusList.html">Status List</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Online Judge <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="BBS.html">Web Board</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="FAQ.html">F.A.Qs</a>
+											</li>
+
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Member <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="Modifyuserpage.html">Update Info</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="Userlist.html">Ranklist</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contests <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Current Contest</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="#">Scheduled Contest</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="#">Past Contest</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：搜索、登录、注册
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for Problems ID ...">
+								<span class="input-group-btn">
+
+        							<button class="btn btn-default" type="button">Go!</button>
+
+      							</span>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for Member ...">
+								<span class="input-group-btn">
+
+        							<button class="btn btn-default" type="button">Go!</button>
+
+      							</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1">
+						Login
+					</button>
+					<span>or</span>
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">
+						Register
+					</button>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+             	作者：hanfuyan@vip.qq.com
+             	时间：2015-05-16
+             	描述：正文内容
+             -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10" id="conterntdiv">
+					<hr />
+
+					<div class="table-responsive">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<td align=center><b>ID</b>
+								</td>
+								<td align=center><b>Title</b>
+								</td>
+								<td align=center><b>Start Time</b>
+								</td>
+								<td align=center><b>Status</b>
+								</td>
+							</thead>
+							<tr>
+								<td align=center>1045</td>
+								<td><a href=showcontest?contest_id=1045>《C语言程序设计II》期中练习赛@14计算机12班</a>
+								</td>
+								<td align=center>2015-04-21 19:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1044</td>
+								<td><a href=showcontest?contest_id=1044>“青软杯”安徽科技学院第六届程序设计大赛_非专业组</a>
+								</td>
+								<td align=center>2015-04-18 08:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1043</td>
+								<td><a href=showcontest?contest_id=1043>“青软杯”安徽科技学院第六届程序设计大赛_专业组</a>
+								</td>
+								<td align=center>2015-04-18 08:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1041</td>
+								<td><a href=showcontest?contest_id=1041>庆祝“4,1愚人节”第六届程序设计竞赛练习赛</a>
+								</td>
+								<td align=center>2015-04-01 19:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1040</td>
+								<td><a href=showcontest?contest_id=1040>2014-2015-1学期计算机14级12班《C语言程序设计I》期末考试</a>
+								</td>
+								<td align=center>2015-01-14 19:15:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1039</td>
+								<td><a href=showcontest?contest_id=1039>庆新年2015元旦赛</a>
+								</td>
+								<td align=center>2014-12-31 12:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1038</td>
+								<td><a href=showcontest?contest_id=1038>14计算机12"圣诞快乐"A题赛</a>
+								</td>
+								<td align=center>2014-12-25 19:20:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1037</td>
+								<td><a href=showcontest?contest_id=1037>14计算机12《程序设计基础》期末练习赛（第一场）</a>
+								</td>
+								<td align=center>2014-12-11 19:15:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1036</td>
+								<td><a href=showcontest?contest_id=1036>14计算机2班程序设计基础热身赛</a>
+								</td>
+								<td align=center>2014-11-27 20:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1035</td>
+								<td><a href=showcontest?contest_id=1035>程序设计基础14热身赛</a>
+								</td>
+								<td align=center>2014-11-25 20:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1034</td>
+								<td><a href=showcontest?contest_id=1034>2012信息12班《Java与面向对象技术》期末考试</a>
+								</td>
+								<td align=center>2014-06-20 19:05:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1033</td>
+								<td><a href=showcontest?contest_id=1033>庆六一“我A题，我快乐”网络公开赛</a>
+								</td>
+								<td align=center>2014-06-01 08:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1032</td>
+								<td><a href=showcontest?contest_id=1032>《Java与面向对象技术》测试赛</a>
+								</td>
+								<td align=center>2014-05-27 14:35:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1031</td>
+								<td><a href=showcontest?contest_id=1031>2013计算机12卓越班<<C语言程序设计II>>练习赛</a>
+								</td>
+								<td align=center>2014-05-22 19:10:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1030</td>
+								<td><a href=showcontest?contest_id=1030>2013计算机12卓越班<<C语言程序设计II>>期末考试</a>
+								</td>
+								<td align=center>2014-06-05 19:05:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1029</td>
+								<td><a href=showcontest?contest_id=1029>《Java与面向对象技术期中测试（1）》</a>
+								</td>
+								<td align=center>2014-05-06 14:40:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1028</td>
+								<td><a href=showcontest?contest_id=1028>《C语言程序设计II》期中测试@13计算机卓越班12</a>
+								</td>
+								<td align=center>2014-05-08 19:05:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1027</td>
+								<td><a href=showcontest?contest_id=1027>安徽科技学院第五届“网博杯”计算机程序设计大赛</a>
+								</td>
+								<td align=center>2014-04-19 08:10:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1024</td>
+								<td><a href=showcontest?contest_id=1024>“网博杯”第五届安徽科技学院程序设计大赛热身赛</a>
+								</td>
+								<td align=center>2014-04-12 15:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1023</td>
+								<td><a href=showcontest?contest_id=1023>2014新年快乐大奖赛暨2011级计算机12信息管理方向《Java高级程序设计》期末测试</a>
+								</td>
+								<td align=center>2014-01-02 09:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1022</td>
+								<td><a href=showcontest?contest_id=1022>2011计算机12班(信息管理方向) JAVA ADVANCED 期末考试</a>
+								</td>
+								<td align=center>2013-12-30 19:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1021</td>
+								<td><a href=showcontest?contest_id=1021>“2014元旦欢乐无奖赛”暨13计算机卓越班《C语言程序设计》期末考试</a>
+								</td>
+								<td align=center>2013-12-31 09:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1020</td>
+								<td><a href=showcontest?contest_id=1020>“天智杯”程序设计基本技能大赛</a>
+								</td>
+								<td align=center>2013-12-28 08:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1019</td>
+								<td><a href=showcontest?contest_id=1019>天智杯程序竞赛热身赛</a>
+								</td>
+								<td align=center>2013-12-21 14:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1018</td>
+								<td><a href=showcontest?contest_id=1018>C程序设计基础 A+B专项练习(IO控制练习)</a>
+								</td>
+								<td align=center>2013-10-30 19:30:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1017</td>
+								<td><a href=showcontest?contest_id=1017>《C语言程序设计》13计算机卓越班练习赛</a>
+								</td>
+								<td align=center>2013-10-16 19:30:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1016</td>
+								<td><a href=showcontest?contest_id=1016>2013“端午节”题大赛</a>
+								</td>
+								<td align=center>2013-06-12 10:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1015</td>
+								<td><a href=showcontest?contest_id=1015>ACM Step：IO:输入输出的专项练习</a>
+								</td>
+								<td align=center>2013-03-23 07:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1014</td>
+								<td><a href=showcontest?contest_id=1014>网博杯网络热身赛</a>
+								</td>
+								<td align=center>2013-03-07 00:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1013</td>
+								<td><a href=showcontest?contest_id=1013>“网博杯” 安徽科技学院第四届程序设计大赛</a>
+								</td>
+								<td align=center>2013-04-07 08:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1011</td>
+								<td><a href=showcontest?contest_id=1011>2012级网络《程序设计基础》实践技能期末测试</a>
+								</td>
+								<td align=center>2013-01-09 19:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1010</td>
+								<td><a href=showcontest?contest_id=1010>“网博杯”安徽科技学院第三届ACM程序设计大赛</a>
+								</td>
+								<td align=center>2012-04-07 14:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1009</td>
+								<td><a href=showcontest?contest_id=1009>安徽科技学院第二届ACM程序设计大赛</a>
+								</td>
+								<td align=center>2011-04-24 14:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1008</td>
+								<td><a href=showcontest?contest_id=1008>安徽科技学院第一届ACM程序设计大赛</a>
+								</td>
+								<td align=center>2010-11-15 14:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1007</td>
+								<td><a href=showcontest?contest_id=1007>《“末日圣诞2012”杯-ACM入门菜鸟欢乐无奖赛》</a>
+								</td>
+								<td align=center>2012-12-25 19:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1006</td>
+								<td><a href=showcontest?contest_id=1006>《程序设计实践技能》II 在线练习</a>
+								</td>
+								<td align=center>2012-12-23 07:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1005</td>
+								<td><a href=showcontest?contest_id=1005>《算法设计与分析》-基础算法：分治，递归，贪心，动态规划</a>
+								</td>
+								<td align=center>2012-12-21 19:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1004</td>
+								<td><a href=showcontest?contest_id=1004>10计算机12《Java高级程序设计》期末模拟考试</a>
+								</td>
+								<td align=center>2012-12-20 19:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1003</td>
+								<td><a href=showcontest?contest_id=1003>2010计算机12班(信息管理方向)<Java高级程序设计>期末考试</a>
+								</td>
+								<td align=center>2012-12-27 19:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>1002</td>
+								<td>
+									<a href=showcontest?contest_id=1002>
+										<程序设计基础>实践技能2012级</a>
+								</td>
+								<td align=center>2012-12-18 18:00:00.0</td>
+								<td align=center><font color=green>ended</font>
+								</td>
+							</tr>
+						</table>
+						<span style="font-size: 20px;" class="glyphicon glyphicon-upload"></span>&nbsp;<a style="font-size: 16px;" href=#top>To top</a>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+		<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：底部版权信息
+            -->
+		<div class="container-fluid">
+			<div id="footerdiv" class="col-md-12">
+				<hr />
+				<p>&copy;&nbsp;Anhui Science and Technology University&nbsp;<a style="color: #555;" href="#">Feedback</a>
+				</p>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="../js/bootstrap.min.js"></script>
+	</body>
+
+</html>

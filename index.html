@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/favicon.ico" /></link>
+		<title>安徽科技学院OJ系统</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+		<style>
+			#conterntdiv {
+				background-image: url(img/contentbg.png);
+				background-repeat: no-repeat;
+			}
+			#conterntdiv p {
+				font-size: 16px;
+			}
+			#footerdiv {
+				text-align: center;
+				color: #AAA;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="container-fluid">
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：logo图片
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+					<img src="img/left.png" />
+				</div>
+				<div class="col-md-4">
+					<img src="img/right.png" />
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：导航栏
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="#">Anhui STU</a>
+							</div>
+
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Problem Set <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="page/Problemlist.html">Problems</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="page/SubmitProblem.html">Submit Problem</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="page/StatusList.html">Status List</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Online Judge <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="page/BBS.html">Web Board</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="page/FAQ.html">F.A.Qs</a>
+											</li>
+
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Member <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="page/Modifyuserpage.html">Update Info</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="page/Userlist.html">Ranklist</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contests <span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Current Contest</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="#">Scheduled Contest</a>
+											</li>
+											<li class="divider"></li>
+											<li><a href="page/Pastcontests.html">Past Contest</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：搜索、登录、注册
+            -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for Problems ID ...">
+								<span class="input-group-btn">
+        							<button class="btn btn-default" type="button">Go!</button>
+      							</span>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for Member ...">
+								<span class="input-group-btn">
+        							<button class="btn btn-default" type="button">Go!</button>
+      							</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1">
+						Login
+					</button>
+					<span>or</span>
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2">
+						Register
+					</button>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<!--
+             	作者：hanfuyan@vip.qq.com
+             	时间：2015-05-16
+             	描述：正文内容
+             -->
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10" id="conterntdiv">
+					<hr />
+					<h3>热烈祝贺我校罗雁、邹鲁贤、杨英豪2015“合财杯”中国大学生计算机设计大赛中获得省级一等奖！!</h3>
+					<hr />
+					<p>Problem Set is the place where you can find large amount of problems from different programming contests. Online Judge System allows you to test your solution for every problem.</p>
+					<p>First of all, read carefully <a href="page/FAQ.html">Frequently Asked Questions</a> .</p>
+					<p>Then, choose <a href="page/Problemlist.html"> problems</a>, solve it and <a href="page/SubmitProblem.html">submit it</a>.</p>
+					<p>If you want to publish your problems or setup your own online contest, just <a href="#">write us</a>.
+					</p>
+					<hr />
+					<span class="glyphicon glyphicon-hand-right"></span>
+					<p>Designer：Han Fuyan</p>
+					<span class="glyphicon glyphicon-hand-right"></span>
+					<p>Developer：Xu Pengcheng</p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+			<!--
+            	作者：hanfuyan@vip.qq.com
+            	时间：2015-05-16
+            	描述：底部版权信息
+            -->
+			<div class="container-fluid">
+				<div id="footerdiv" class="col-md-12">
+					<hr />
+					<p>&copy;&nbsp;Anhui Science and Technology University&nbsp;<a style="color: #555;" href="#">Feedback</a>
+					</p>
+				</div>
+			</div>
+
+
+		<!--
+        	作者：hanfuyan@vip.qq.com
+        	时间：2015-05-16
+        	描述：登录 Modal
+        -->
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">Welcome AnhuiSTU OnlineJudge</h4>
+					</div>
+					<div class="modal-body">
+						<ul class="nav nav-tabs">
+							<li role="presentation" class="active"><a href="#">Login</a>
+							</li>
+						</ul>
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Member ID</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter ID">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：hanfuyan@vip.qq.com
+        	时间：2015-05-16
+        	描述：注册 Modal
+        -->
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">Welcome AnhuiSTU OnlineJudge</h4>
+					</div>
+					<div class="modal-body">
+						<ul class="nav nav-tabs">
+							<li role="presentation" class="active"><a href="#">Regiser</a>
+							</li>
+						</ul>
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Member ID</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter ID">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Nick Name</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nick Name">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Repeat Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repeat Password">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">School</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="School">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">E-mail</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+
+</html>
